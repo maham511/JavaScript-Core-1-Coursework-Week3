@@ -10,25 +10,33 @@
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 //Prints 1-15
-  arr.forEach(function(number, index){
-     console.log(number);
+  arr.forEach(function(number){
+   //  console.log(number);
+     return number;
   })
 
   //Use .map() to change 3 multiples to 'Fizz', 5 multiples to 'Buzz'
     function changeToWord (number) {
       if (number % 5 === 0 && number % 3 === 0) {
-        return "Fizz" + "Buzz";
+        return "FizzBuzz";
       } else if (number % 3 === 0) {
         return "Fizz";
       } else if (number % 5 === 0) {
         return "Buzz";
       }
+      else {
+        return number;
+      }
        
     }
   
-    let threeToWord = arr.map(changeToWord);
+    let numToWord = arr.map(changeToWord); //prints relevant words instead of multiples
 
-    console.log(threeToWord);
+  //Combine map with forEach
+  numToWord.forEach(function (number) {
+    console.log(number);
+  });  
+
 /* EXPECTED OUTPUT */
 
 /*
