@@ -23,7 +23,7 @@ var names = [
 // variable stores result of iterations on names array
 var longNameThatStartsWithA = names.find(findLongNameThatStartsWithA);
 
-console.log(names.find(findLongNameThatStartsWithA));
+console.log(longNameThatStartsWithA);
 
 /* EXPECTED OUTPUT */
 // "Alexandra"
