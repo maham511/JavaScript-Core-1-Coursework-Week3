@@ -18,7 +18,7 @@ var pairsByIndex =  pairsByIndexRaw.filter(function(element) {
         if (Array.isArray(element) && element.length === 2) {
           return pairsByIndexRaw;
         }
-})          // Complete this statement
+})    // Complete this statement
 
 //Can also be solved this way:
 //  function isArrayAndPair(element) { 

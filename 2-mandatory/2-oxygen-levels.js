@@ -11,7 +11,7 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function findSafeOxygenLevel(strArr) {
+function findSafeOxygenLevel(levels) {
 
   //Predicate function checks if number in range, returns boolean
   function isSafeLevel(level) {  
@@ -21,8 +21,8 @@ function findSafeOxygenLevel(strArr) {
   return level > "19.6" && level < "23.5" && level.includes("%") && !level.includes('00');
 }
 
-//safeLevel works, but adds% to all numbers
-let safeLevel = strArr.find(isSafeLevel);
+//checks for conditions in levels array, returns 1st item value that is true 
+let safeLevel = levels.find(isSafeLevel);
 return safeLevel;
  }
 
