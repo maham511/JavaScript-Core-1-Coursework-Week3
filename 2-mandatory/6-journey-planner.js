@@ -134,7 +134,15 @@ function getLocationName(placesAndModes) {
 */
 function journeyPlanner(locations, transportMode) {
   // Implement the function body
+      if (locations.map(isAccessibleByTransportMode)) {
+       return getLocationName();
+      }
 }
+
+// function journeyPlanner(locations, transportMode) {
+//   // Implement the function body
+//   locations.map(getLocationName)  
+//}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
