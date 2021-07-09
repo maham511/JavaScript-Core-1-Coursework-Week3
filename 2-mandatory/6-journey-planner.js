@@ -132,9 +132,11 @@ function getLocationName(placesAndModes) {
    
   Advanced challange: try to use arrow function when invoking an array method.
 */
+
+//main function doesn't work, didn't manage to solve
 function journeyPlanner(locations, transportMode) {
   // Implement the function body
-      if (locations.map(isAccessibleByTransportMode)) {
+      if (locations.map(isAccessibleByTransportMode())) {
        return getLocationName();
       }
 }
